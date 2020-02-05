@@ -21,8 +21,10 @@ export default {
 <style lang="less">
 #app {
   width: 100%;
-  max-height: 450px;
+  max-width: 450px;
+  min-width: 375px;
   font-family: "Noto Sans S Chinese";
   position: relative;
+  margin: 0 auto;
 }
 </style>
