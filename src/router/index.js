@@ -7,10 +7,6 @@ const router = new Router({
     name: 'tip',
     component: () => import('../views/index.vue')
   }, {
-    path: '/info',
-    name: 'info',
-    component: () => import('../views/info.vue')
-  }, {
     path: '*',
     redirect: '/'
   }]
