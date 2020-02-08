@@ -12,7 +12,7 @@
         <img v-else src="../assets/img/select.png" class="icon">
         我已阅读口罩购买说明
       </div>
-      <img v-if="isRead" src="../assets/img/btn_confirm_ed.png" alt="确认" class="btn_confirm">
+      <img v-if="isRead" src="../assets/img/btn_confirm_ed.png" alt="确认" class="btn_confirm" @click="toShop">
       <img v-else src="../assets/img/btn_confirm.png" alt="确认"  class="btn_confirm">
     </div>
     <div class="chainInfo">
@@ -25,7 +25,7 @@
         <scroll :data="list" class="scroll" :class-option="option">
           <div class="list">
             <div v-for="(item,index) in list" :key="index" class="item">
-              <p>{{item.name|filterName}}</p>
+              <p>{{item.userName}}</p>
               <p>{{item.hash}}</p>
             </div>
           </div>
@@ -37,6 +37,7 @@
 
 <script>
 import scroll from 'vue-seamless-scroll'
+import { mapActions } from 'vuex'
 export default {
   components: {
     scroll
@@ -47,34 +48,22 @@ export default {
       option: {
         hoverStop: false
       },
-      list: [{
-        name: '杨金伟',
-        hash: '32838dngnks0439484ieitueiowfuiai32838dngnks0439484ieitueiowfuiai'
-      }, {
-        name: '杨金伟',
-        hash: '32838dngnks0439484ieitueiowfuiai32838dngnks0439484ieitueiowfuiai'
-      }, {
-        name: '杨金伟',
-        hash: '32838dngnks0439484ieitueiowfuiai32838dngnks0439484ieitueiowfuiai'
-      }, {
-        name: '杨金伟',
-        hash: '32838dngnks0439484ieitueiowfuiai32838dngnks0439484ieitueiowfuiai'
-      }, {
-        name: '杨金伟',
-        hash: '32838dngnks0439484ieitueiowfuiai32838dngnks0439484ieitueiowfuiai'
-      }, {
-        name: '杨金伟',
-        hash: '32838dngnks0439484ieitueiowfuiai32838dngnks0439484ieitueiowfuiai'
-      }, {
-        name: '杨金伟',
-        hash: '32838dngnks0439484ieitueiowfuiai32838dngnks0439484ieitueiowfuiai'
-      }, {
-        name: '杨金伟',
-        hash: '32838dngnks0439484ieitueiowfuiai32838dngnks0439484ieitueiowfuiai'
-      } ]
+      list: []
     }
   },
-  created () {}
+  created () {
+    this.getHashList({}).then(res => {
+      if (res.data.code === 200) {
+        this.list = res.data.data.list
+      }
+    })
+  },
+  methods: {
+    ...mapActions(['getHashList']),
+    toShop () {
+      window.location.href = 'https://www.qioku.com/mobile/index.php?r=goods&id=4438'
+    }
+  }
 }
 </script>
 
@@ -162,6 +151,7 @@ export default {
     .scroll-title{
       display: grid;
       grid-template-columns: 3fr 5fr;
+      grid-gap: 0 10px;
       grid-auto-rows: 38px;
       align-items: center;
       padding: 0 16px 0 14px;
@@ -185,6 +175,7 @@ export default {
           overflow: hidden;
           display: grid;
           grid-template-columns: 3fr 5fr;
+          grid-gap: 0 10px;
           grid-auto-rows: 30px;
           align-items: center;
           p{
