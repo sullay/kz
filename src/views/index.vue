@@ -104,13 +104,13 @@ export default {
     p {
       font-size: 14px;
       color: rgba(102, 102, 102, 1);
-      margin-top: 16px;
+      margin-top: 8px;
       &:first-of-type {
         margin-top: 21px;
       }
     }
     .read{
-      margin-top: 15px;
+      margin-top: 13px;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -127,7 +127,8 @@ export default {
     .btn_confirm{
       width: 95px;
       height: 41px;
-      align-self: flex-end;
+      margin-top: 15px;
+      align-self: center;
       cursor: pointer;
       -webkit-tap-highlight-color:transparent;
     }
