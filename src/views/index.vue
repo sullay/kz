@@ -91,6 +91,22 @@ export default {
       },
       list: [],
       shopList: [{
+        img: require('../assets/img/shop-15.png'),
+        name: '德国 BRAUN耳温枪',
+        url: 'https://www.qioku.com/mobile/index.php?r=goods&id=4464'
+      }, {
+        img: require('../assets/img/shop-16.png'),
+        name: '韩国KF94儿童口罩',
+        url: 'https://www.qioku.com/mobile/index.php?r=goods&id=4461'
+      }, {
+        img: require('../assets/img/shop-17.png'),
+        name: '日本制造TOAMIT VIRUS SHUT OUT防护卡',
+        url: 'https://www.qioku.com/mobile/index.php?r=goods&id=4465'
+      }, {
+        img: require('../assets/img/shop-10.png'),
+        name: '韩国PLANZERO KF94三层防护口罩',
+        url: 'https://www.qioku.com/mobile/index.php?r=goods&id=4463'
+      }, {
         img: require('../assets/img/shop-01.png'),
         name: '日本摩尔斯系列N99口罩',
         url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4446&u=284'
@@ -133,10 +149,6 @@ export default {
       //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4449&u=284'
       // },
       {
-        img: require('../assets/img/shop-10.png'),
-        name: '韩国PLANZERO KF94三层防护口罩',
-        url: 'https://www.qioku.com/mobile/index.php?r=goods&id=4463'
-      }, {
         img: require('../assets/img/shop-11.png'),
         name: '韩国3M(8812K)口罩',
         url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4448&u=284'
@@ -152,18 +164,6 @@ export default {
         img: require('../assets/img/shop-14.png'),
         name: '日本skater1-3岁儿童口罩',
         url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4457&u=284'
-      }, {
-        img: require('../assets/img/shop-15.png'),
-        name: '德国 BRAUN耳温枪',
-        url: 'https://www.qioku.com/mobile/index.php?r=goods&id=4464'
-      }, {
-        img: require('../assets/img/shop-16.png'),
-        name: '韩国KF94儿童口罩',
-        url: 'https://www.qioku.com/mobile/index.php?r=goods&id=4461'
-      }, {
-        img: require('../assets/img/shop-17.png'),
-        name: '日本制造TOAMIT VIRUS SHUT OUT防护卡',
-        url: 'https://www.qioku.com/mobile/index.php?r=goods&id=4465'
       }]
     }
   },
