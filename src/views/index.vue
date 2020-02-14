@@ -23,6 +23,7 @@
       </span>
     </el-dialog>
     <div class="back" />
+    <img class="logo" src="../assets/img/logo.png">
     <div class="shopList" :class="{'isPackUp':isPackUp}">
       <img src="../assets/img/img_title.png" class="img-title">
       <div class="title">
@@ -164,6 +165,7 @@ export default {
     },
     toShop () {
       if (!this.isRead) {
+        this.$message.error('请先确认已阅读口罩购买说明！')
         return
       }
       this.dialogInfo.isShow = false
@@ -182,6 +184,13 @@ export default {
     z-index: -1;
     background-image: url("../assets/img/tip_back.png");
     background-size: cover;
+  }
+  .logo{
+    position: absolute;
+    top: 0;
+    left: 12px;
+    width: 78px;
+    height: 34px;
   }
   .shopList{
     width: 355px;
@@ -406,5 +415,10 @@ export default {
       }
     }
   }
+}
+.el-message{
+  width:280px;
+  height:35px;
+  min-width: 280px;
 }
 </style>
