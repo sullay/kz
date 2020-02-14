@@ -9,7 +9,7 @@
         <div class="dialog-title">口罩购买须知</div>
       </template>
       <div class="dialog-content">
-        <p>本人承诺：购买口罩只自用，不得抬价转卖；用完后按照卫生部门有关指引进行处理，不造成二次污染。如违反承诺，将接受被全链公告。</p>
+        <p>本人承诺：购买口罩只自用，不得抬价转卖；用完后按照卫生部门有关指引进行处理，不造成二次污染。如违反承诺，将接受相关机构处理。</p>
         <p>本承诺及交易记录，由畅物链和蚁米卓启云链，进行分布式存证和全链追踪。</p>
         <div class="dialog-read" @click="isRead=!isRead">
           <img v-if="isRead" src="../assets/img/select_ed.png">
