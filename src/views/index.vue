@@ -23,7 +23,7 @@
       </span>
     </el-dialog>
     <div class="back" />
-    <img class="logo" src="../assets/img/logo.png">
+    <img class="logo" src="../assets/img/logo.png" @click="toYiMi">
     <div class="shopList" :class="{'isPackUp':isPackUp}">
       <img src="../assets/img/img_title.png" class="img-title">
       <div class="title">
@@ -170,6 +170,9 @@ export default {
       }
       this.dialogInfo.isShow = false
       window.location.href = this.dialogInfo.url
+    },
+    toYiMi () {
+      window.location.href = 'http://www.yimibit.com/#/'
     }
   }
 }
