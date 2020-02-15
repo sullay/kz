@@ -177,15 +177,20 @@ export default {
   methods: {
     ...mapActions(['getHashList']),
     showDialog (url) {
-      this.isRead = false
-      this.dialogInfo.url = url
-      this.dialogInfo.isShow = true
+      if (sessionStorage.getItem('isRead')) {
+        window.location.href = url
+      } else {
+        this.isRead = false
+        this.dialogInfo.url = url
+        this.dialogInfo.isShow = true
+      }
     },
     toShop () {
       if (!this.isRead) {
         this.$message.error('请先确认已阅读口罩购买说明！')
         return
       }
+      sessionStorage.setItem('isRead', this.isRead)
       this.dialogInfo.isShow = false
       window.location.href = this.dialogInfo.url
     },
