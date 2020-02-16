@@ -37,7 +37,7 @@
           <p>{{shop.name}}</p>
         </div>
       </div>
-      <div class="bottom" @click="isPackUp=!isPackUp">
+      <!-- <div class="bottom" @click="isPackUp=!isPackUp">
         <template v-if="isPackUp" >
           <img src="../assets/img/icon_bottom.png">
           展开
@@ -46,7 +46,7 @@
           <img src="../assets/img/icon_top.png">
           收起
         </template>
-      </div>
+      </div> -->
     </div>
     <div class="chainInfo">
       <img src="../assets/img/img_title.png" class="img-title">
@@ -107,64 +107,74 @@ export default {
         name: '韩国KF94儿童口罩',
         url: 'https://www.qioku.com/mobile/index.php?r=goods&id=4461'
       }, {
-        img: require('../assets/img/shop-01.png'),
-        name: '日本摩尔斯系列N99口罩',
-        url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4446&u=284'
+        img: require('../assets/img/shop-18.png'),
+        name: '印尼进口 LEBOO 三层防护一次性口罩',
+        url: 'https://www.qioku.com/mobile/index.php?r=goods&id=4469&from=groupmessage&isappinstalled=0&scene=1&clicktime=1581841810&enterid=1581841810'
       }, {
-        img: require('../assets/img/shop-02.png'),
-        name: '日本大创小脸型三层防护口罩',
-        url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4452&u=284'
-      }, {
-        img: require('../assets/img/shop-03.png'),
-        name: '日本大创防护立体口罩',
-        url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4459&u=284'
-      }, {
-        img: require('../assets/img/shop-04.png'),
-        name: 'Honeywell H8001 N95标准口罩',
-        url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4447&u=284'
-      }, {
-        img: require('../assets/img/shop-05.png'),
-        name: '日本大创防护立体口罩(20个)',
-        url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4458&u=284'
-      }, {
-        img: require('../assets/img/shop-06.png'),
-        name: '日本大创防护口罩（7个）',
-        url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4453&u=284'
-      }, {
-        img: require('../assets/img/shop-07.png'),
-        name: '日本skater4-10岁儿童口罩（30个）',
-        url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4454&u=284'
-      }, {
-        img: require('../assets/img/shop-08.png'),
-        name: '日本skater4-10岁儿童口罩(10个)装',
-        url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4456&u=284'
-      }, {
-        img: require('../assets/img/shop-09.png'),
-        name: '韩国KF94口罩',
-        url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4450&u=284'
-      },
+        img: require('../assets/img/shop-19.png'),
+        name: '原装3M 8210防护口罩 N95级别',
+        url: 'https://www.qioku.com/mobile/index.php?r=goods&id=4467&from=groupmessage&isappinstalled=0&scene=1&clicktime=1581842095&enterid=1581842095'
+      }
+      // {
+      //   img: require('../assets/img/shop-01.png'),
+      //   name: '日本摩尔斯系列N99口罩',
+      //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4446&u=284'
+      // }, {
+      //   img: require('../assets/img/shop-02.png'),
+      //   name: '日本大创小脸型三层防护口罩',
+      //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4452&u=284'
+      // }, {
+      //   img: require('../assets/img/shop-03.png'),
+      //   name: '日本大创防护立体口罩',
+      //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4459&u=284'
+      // }, {
+      //   img: require('../assets/img/shop-04.png'),
+      //   name: 'Honeywell H8001 N95标准口罩',
+      //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4447&u=284'
+      // }, {
+      //   img: require('../assets/img/shop-05.png'),
+      //   name: '日本大创防护立体口罩(20个)',
+      //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4458&u=284'
+      // }, {
+      //   img: require('../assets/img/shop-06.png'),
+      //   name: '日本大创防护口罩（7个）',
+      //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4453&u=284'
+      // }, {
+      //   img: require('../assets/img/shop-07.png'),
+      //   name: '日本skater4-10岁儿童口罩（30个）',
+      //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4454&u=284'
+      // }, {
+      //   img: require('../assets/img/shop-08.png'),
+      //   name: '日本skater4-10岁儿童口罩(10个)装',
+      //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4456&u=284'
+      // }, {
+      //   img: require('../assets/img/shop-09.png'),
+      //   name: '韩国KF94口罩',
+      //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4450&u=284'
+      // },
       // {
       //   img: require('../assets/img/shop-10.png'),
       //   name: '韩国KF94口罩(单)',
       //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4449&u=284'
       // },
-      {
-        img: require('../assets/img/shop-11.png'),
-        name: '韩国3M(8812K)口罩',
-        url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4448&u=284'
-      }, {
-        img: require('../assets/img/shop-12.png'),
-        name: 'sanrio1-3岁儿童口罩',
-        url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4451&u=284'
-      }, {
-        img: require('../assets/img/shop-13.png'),
-        name: '日本skater1-3岁儿童口罩（20个）',
-        url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4455&u=284'
-      }, {
-        img: require('../assets/img/shop-14.png'),
-        name: '日本skater1-3岁儿童口罩',
-        url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4457&u=284'
-      }]
+      // {
+      //   img: require('../assets/img/shop-11.png'),
+      //   name: '韩国3M(8812K)口罩',
+      //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4448&u=284'
+      // }, {
+      //   img: require('../assets/img/shop-12.png'),
+      //   name: 'sanrio1-3岁儿童口罩',
+      //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4451&u=284'
+      // }, {
+      //   img: require('../assets/img/shop-13.png'),
+      //   name: '日本skater1-3岁儿童口罩（20个）',
+      //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4455&u=284'
+      // }, {
+      //   img: require('../assets/img/shop-14.png'),
+      //   name: '日本skater1-3岁儿童口罩',
+      //   url: 'https://www.qioku.com/mobile/index.php?m=goods&id=4457&u=284'
+      // }
+      ]
     }
   },
   created () {
