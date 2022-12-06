@@ -11,7 +11,7 @@
     "core-js": "^3.1.2",
     "element-ui": "^2.12.0",
     "moment": "^2.24.0",
-    "qs": "^6.9.0",
+    "qs": "^6.9.7",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6",
     "vue-seamless-scroll": "^1.1.17",
